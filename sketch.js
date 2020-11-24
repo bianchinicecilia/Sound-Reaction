@@ -27,7 +27,7 @@ function loaded() {
 }
 
 function draw() {
-  background('#F4EDCD');
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
