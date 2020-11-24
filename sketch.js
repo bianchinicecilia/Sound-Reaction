@@ -14,6 +14,15 @@ function setup() {
   background('#F4EDED');
 }
 
+var infoButton = createButton ("Blank");
+infoButton.mouseOver(info);
+
+function info() {
+  textSize(32);
+  text('word', 10, 30);
+  fill(0, 102, 153);
+}
+
 function loaded() {
   button = createButton('play');
   button.mousePressed(togglePlaying);
@@ -39,15 +48,6 @@ function togglePlaying() {
     song.stop();
     button.html('play');
   }
-}
-
-var infoButton = createButton ("Blank");
-infoButton.mouseOver(info);
-
-function info() {
-  textSize(32);
-  text('word', 10, 30);
-  fill(0, 102, 153);
 }
 
 /*let myFont;
