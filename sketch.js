@@ -13,12 +13,12 @@ function setup() {
   amp = new p5.Amplitude();
   background('#F4EDED');
   var infoButton = createButton ("Blank");
+  infoButton.mouseOver(info);
 }
 
-/*function info() {
-  infoButton.mouseOver(info);
+function info() {
   rect(100,100,100,100);
-}*/
+}
 
 function loaded() {
   button = createButton('play');
