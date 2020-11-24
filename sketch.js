@@ -41,7 +41,7 @@ function togglePlaying() {
   }
 }
 
-/*var infoButton = createButton ("Blank");
+var infoButton = createButton ("Blank");
 infoButton.mouseOver(info);
 
 function info() {
@@ -50,7 +50,7 @@ function info() {
   fill(0, 102, 153);
 }
 
-let myFont;
+/*let myFont;
 function preload() {
   myFont = loadFont('assets/Basis Grotesque Pro Regula.otf');
 }
