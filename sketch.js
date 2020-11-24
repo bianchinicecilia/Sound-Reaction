@@ -14,6 +14,7 @@ function setup() {
   background('#F4EDED');
   var infoButton = createButton ("Blank");
   infoButton.mouseOver(info);
+  infoButton.position(0,0);
 }
 
 function info() {
