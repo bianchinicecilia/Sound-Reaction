@@ -12,10 +12,9 @@ function setup() {
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
+  var infoButton = createButton ("Blank");
+  infoButton.mouseOver(info);
 }
-
-var infoButton = createButton ("Blank");
-infoButton.mouseOver(info);
 
 function info() {
   textSize(32);
