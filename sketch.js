@@ -9,13 +9,13 @@ var amp;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song = loadSound('yume.mp3', loaded);
+  song = loadSound('assets/yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
 }
 
 function loaded() {
-  button = createButton('pause');
+  button = createButton('play');
   button.mousePressed(togglePlaying);
 }
 
@@ -39,4 +39,16 @@ function togglePlaying() {
     song.stop();
     button.html('play');
   }
+}
+
+let myFont;
+function preload() {
+  myFont = loadFont('assets/Basis Grotesque Pro Regula.otf');
+}
+
+function setup() {
+  fill('#ED225D');
+  textFont(myFont);
+  textSize(36);
+  text('p5*js', 10, 50);
 }
