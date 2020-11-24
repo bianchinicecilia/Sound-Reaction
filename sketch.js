@@ -8,7 +8,7 @@ var button;
 var amp;
 
 function setup() {
-  createCanvas(auto, auto);
+  createCanvas(100%, 100%);
   song = loadSound('rainbow.mp3', loaded);
   amp = new p5.Amplitude();
   background(51);
