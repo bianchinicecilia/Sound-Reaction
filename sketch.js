@@ -12,9 +12,13 @@ function setup() {
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
-  /*var infoButton = createButton ("");
+  var infoButton = createButton ("");
   infoButton.mouseOver(info);
-  infoButton.position(0,0);*/
+  infoButton.position(0,0);
+}
+
+function info() {
+  rect(100,100,100,100);
 }
 
 function loaded() {
@@ -24,7 +28,7 @@ function loaded() {
 }
 
 function draw() {
-  background('#F4EDLD');
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
@@ -32,10 +36,6 @@ function draw() {
   fill('#FFFFFF');
   noStroke();
   ellipse(windowWidth / 2, windowHeight / 2, diam, diam);
-}
-
-function info() {
-  rect(100,100,100,100);
 }
 
 function togglePlaying() {
