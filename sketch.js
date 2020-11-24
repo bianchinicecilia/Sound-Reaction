@@ -8,7 +8,7 @@ var button;
 var amp;
 
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(auto, auto);
   song = loadSound('rainbow.mp3', loaded);
   amp = new p5.Amplitude();
   background(51);
@@ -25,7 +25,7 @@ function draw() {
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 10, 200);
 
-  fill(255, 0, 255);
+  fill(0, 0, 255);
   ellipse(width / 2, height / 2, diam, diam);
 }
 
