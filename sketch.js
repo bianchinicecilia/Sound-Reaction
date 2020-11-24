@@ -3,24 +3,24 @@
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/NCCHQwNAN6Y
 
-/*var song;
+var song;
 var button;
-var amp;*/
+var amp;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  /*song = loadSound('yume.mp3', loaded);
-  amp = new p5.Amplitude();*/
+  song = loadSound('yume.mp3', loaded);
+  amp = new p5.Amplitude();
   background('#F4EDED');
   var infoButton = createButton ("Blank");
+}
+
+/*function info() {
   infoButton.mouseOver(info);
-}
-
-function info() {
   rect(100,100,100,100);
-}
+}*/
 
-/*function loaded() {
+function loaded() {
   button = createButton('play');
   button.mousePressed(togglePlaying);
 }
