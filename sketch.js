@@ -11,7 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
-  background('#F4EDLD');
+  background('#F4EDED');
   /*var infoButton = createButton ("");
   infoButton.mouseOver(info);
   infoButton.position(0,0);*/
@@ -24,7 +24,7 @@ function loaded() {
 }
 
 function draw() {
-  background('#F4EDED');
+  background('#F4EDLD');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
