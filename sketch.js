@@ -26,6 +26,7 @@ function draw() {
   var diam = map(vol, 0, 0.3, 300, 1000);
 
   fill('#FFFFFF');
+  noStroke();
   ellipse(width / 2, height / 2, diam, diam);
 }
 
