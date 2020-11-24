@@ -17,9 +17,7 @@ function setup() {
 }
 
 function info() {
-  textSize(32);
-  text('word', 10, 30);
-  fill(0, 102, 153);
+  rect(100,100,100,100);
 }
 
 function loaded() {
@@ -28,7 +26,7 @@ function loaded() {
 }
 
 function draw() {
-  background('#F4EDCD');
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
