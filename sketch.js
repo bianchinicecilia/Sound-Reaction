@@ -11,7 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('rainbow.mp3', loaded);
   amp = new p5.Amplitude();
-  background(51);
+  background('#F4EDED');
 }
 
 function loaded() {
