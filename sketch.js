@@ -23,7 +23,7 @@ function draw() {
   background('#F4EDED');
 
   var vol = amp.getLevel();
-  var diam = map(vol, 0, 0.3, 300, 1000);
+  var diam = map(vol, 0, 0.3, 300, 500);
 
   fill('#FFFFFF');
   noStroke();
