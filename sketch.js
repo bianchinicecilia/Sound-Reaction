@@ -11,7 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
-  background('#F4EDCD');
+  background('#F4EDLD');
   /*var infoButton = createButton ("");
   infoButton.mouseOver(info);
   infoButton.position(0,0);*/
@@ -23,12 +23,8 @@ function loaded() {
   button.mouseOver(info);
 }
 
-function info() {
-  rect(100,100,100,100);
-}
-
 function draw() {
-  background('#F4EDGD');
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
@@ -47,6 +43,10 @@ function togglePlaying() {
     song.stop();
     button.html('play');
   }
+}
+
+function info() {
+  rect(100,100,100,100);
 }
 
 /*let myFont;
