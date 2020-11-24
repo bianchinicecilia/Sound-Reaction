@@ -23,7 +23,7 @@ function draw() {
   background('#F4EDED');
 
   var vol = amp.getLevel();
-  var diam = map(vol, 0, 0.3, 500, 1500);
+  var diam = map(vol, 0, 0.3, 300, 1000);
 
   fill('#FFFFFF');
   ellipse(width / 2, height / 2, diam, diam);
