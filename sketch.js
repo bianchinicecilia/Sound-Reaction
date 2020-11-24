@@ -34,7 +34,7 @@ function draw() {
 
   fill('#FFFFFF');
   noStroke();
-  ellipse(width / 2, height / 2, diam, diam);
+  ellipse(windowWidth / 2, windowHeight / 2, diam, diam);
 }
 
 function togglePlaying() {
