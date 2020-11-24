@@ -7,7 +7,6 @@ var song;
 var button;
 var amp;
 
-let audioElement;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
@@ -16,13 +15,12 @@ function setup() {
 }
 
 function loaded() {
-  audioElement.autoplay();
   button = createButton('pause');
   button.mousePressed(togglePlaying);
 }
 
 function draw() {
-  background('#F4EDCD');
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
