@@ -17,7 +17,7 @@ function setup() {
 
 function loaded() {
   audioElement.autoplay();
-  /*button = createButton('play');*/
+  button = createButton('pause');
   button.mousePressed(togglePlaying);
 }
 
@@ -37,8 +37,8 @@ function togglePlaying() {
     song.play();
     song.setVolume(0.3);
     button.html('pause');
-  } /*else {
+  } else {
     song.stop();
     button.html('play');
-  }*/
+  }
 }
