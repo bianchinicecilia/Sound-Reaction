@@ -41,14 +41,23 @@ function togglePlaying() {
   }
 }
 
-let myFont;
+var infoButton = createButton ("Blank");
+infoButton.mouseOver(info);
+
+function info() {
+  textSize(32);
+  text('word', 10, 30);
+  fill(0, 102, 153);
+}
+
+/*let myFont;
 function preload() {
   myFont = loadFont('assets/Basis Grotesque Pro Regula.otf');
 }
 
 function setup() {
-  fill('#ED225D');
+  fill('#E21118');
   textFont(myFont);
   textSize(36);
   text('p5*js', 10, 50);
-}
+}*/
