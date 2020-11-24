@@ -34,6 +34,10 @@ function draw() {
   ellipse(windowWidth / 2, windowHeight / 2, diam, diam);
 }
 
+function info() {
+  rect(100,100,100,100);
+}
+
 function togglePlaying() {
   if (!song.isPlaying()) {
     song.play();
@@ -43,10 +47,6 @@ function togglePlaying() {
     song.stop();
     button.html('play');
   }
-}
-
-function info() {
-  rect(100,100,100,100);
 }
 
 /*let myFont;
