@@ -9,7 +9,7 @@ var amp;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song = loadSound('Assets/yume.mp3', loaded);
+  song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
 }
