@@ -20,12 +20,12 @@ function loaded() {
 }
 
 function draw() {
-  background(51);
+  background('#F4EDED');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 10, 200);
 
-  fill(0, 0, 255);
+  fill('#FFFFFF');
   ellipse(width / 2, height / 2, diam, diam);
 }
 
