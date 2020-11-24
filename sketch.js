@@ -7,6 +7,7 @@ var song;
 var button;
 var amp;
 
+let audioElement;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
@@ -15,7 +16,8 @@ function setup() {
 }
 
 function loaded() {
-  button = createButton('play');
+  audioElement.autoplay();
+  /*button = createButton('play');*/
   button.mousePressed(togglePlaying);
 }
 
@@ -35,8 +37,8 @@ function togglePlaying() {
     song.play();
     song.setVolume(0.3);
     button.html('pause');
-  } else {
+  } /*else {
     song.stop();
     button.html('play');
-  }
+  }*/
 }
