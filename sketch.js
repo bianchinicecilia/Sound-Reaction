@@ -11,13 +11,14 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
+  button = createButton('play');
+  button.mousePressed(togglePlaying);
   background('#F4EDED');
 }
 
-function loaded() {
-  button = createButton('play');
-  button.mousePressed(togglePlaying);
-}
+/*function loaded() {
+
+}*/
 
 function draw() {
   background('#F4EDED');
