@@ -13,8 +13,8 @@ function setup() {
   amp = new p5.Amplitude();
   background('#F4EDED');
   var infoButton = createButton ("");
-  infoButton.mouseOver(info);
-  infoButton.position(0,0);
+  button.mouseOver(info);
+  /*button.position(0,0);*/
 }
 
 function info() {
