@@ -12,20 +12,18 @@ function setup() {
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
-  /*var infoButton = createButton ("");
-  button.mouseOver(info);*/
-  /*button.position(0,0);*/
-}
-
-/*function info() {
-  rect(100,100,100,100);
-}*/
-
-function loaded() {
   button = createButton('play');
   button.mousePressed(togglePlaying);
   button.mouseOver(info);
 }
+
+function info() {
+  rect(100,100,100,100);
+}
+
+/*function loaded() {
+
+}*/
 
 function draw() {
   background('#F4EDED');
