@@ -12,18 +12,12 @@ function setup() {
   song = loadSound('yume.mp3', loaded);
   amp = new p5.Amplitude();
   background('#F4EDED');
+}
+
+function loaded() {
   button = createButton('play');
   button.mousePressed(togglePlaying);
-  button.mouseOver(info);
 }
-
-function info() {
-  rect(100,100,100,100);
-}
-
-/*function loaded() {
-
-}*/
 
 function draw() {
   background('#F4EDED');
@@ -46,15 +40,3 @@ function togglePlaying() {
     button.html('play');
   }
 }
-
-/*let myFont;
-function preload() {
-  myFont = loadFont('assets/Basis Grotesque Pro Regula.otf');
-}
-
-function setup() {
-  fill('#E21118');
-  textFont(myFont);
-  textSize(36);
-  text('p5*js', 10, 50);
-}*/
