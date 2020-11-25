@@ -10,7 +10,7 @@ var amp;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   song = loadSound('yume.mp3', loaded);
-  amp = new p5.Amplitude();
+  /*amp = new p5.Amplitude();*/
   button = createButton('play');
   button.mousePressed(togglePlaying);
   background('#F4EDED');
