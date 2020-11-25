@@ -16,12 +16,16 @@ function setup() {
 
 function loaded() {
   button = createButton('play');
-  button.mouseOver(info);
-  button.mousePressed(togglePlaying);
+  button.mousePressed(info);
+  /*button.mousePressed(togglePlaying);*/
+}
+
+function info() {
+  rect(100,100,100,100);
 }
 
 function draw() {
-  background('#F4EDED');
+  background('#F4EDCD');
 
   var vol = amp.getLevel();
   var diam = map(vol, 0, 0.3, 300, 500);
@@ -29,10 +33,6 @@ function draw() {
   fill('#FFFFFF');
   noStroke();
   ellipse(windowWidth / 2, windowHeight / 2, diam, diam);
-}
-
-function info() {
-  rect(100,100,100,100);
 }
 
 function togglePlaying() {
