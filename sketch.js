@@ -24,7 +24,7 @@ function info() {
   rect(100,100,100,100);
 }
 
-function draw() {
+/*function draw() {
   background('#F4EDCD');
 
   var vol = amp.getLevel();
@@ -44,4 +44,4 @@ function togglePlaying() {
     song.stop();
     button.html('play');
   }
-}
+}*/
