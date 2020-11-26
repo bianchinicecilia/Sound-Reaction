@@ -19,6 +19,7 @@ function loaded() {
   /*button.mousePressed(info);*/
   button.mousePressed(togglePlaying);
   button.position(10,10);
+  button.style('background-color', '#F4EDED');
   button.style('color:#E21118');
   button.style('font-size', '1.5em');
 }
