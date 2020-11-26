@@ -15,7 +15,7 @@ function setup() {
 }
 
 function loaded() {
-  button = createButton('play');
+  button = createButton('Play');
   /*button.mousePressed(info);*/
   button.mousePressed(togglePlaying);
   button.position(10,10);
