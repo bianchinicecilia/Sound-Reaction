@@ -20,7 +20,7 @@ function loaded() {
   button.mousePressed(togglePlaying);
   button.position(10,10);
   button.style('color:#E21118');
-  button.style('font-size', '3em');
+  button.style('font-size', '1.5em');
 }
 
 /*function info() {
