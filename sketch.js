@@ -19,11 +19,12 @@ function loaded() {
   /*button.mousePressed(info);*/
   button.mousePressed(togglePlaying);
   button.position(10,10);
+  button.style('color:#E21118');
 }
 
-function info() {
+/*function info() {
   rect(100,100,100,100);
-}
+}*/
 
 function draw() {
   background('#F4EDED');
