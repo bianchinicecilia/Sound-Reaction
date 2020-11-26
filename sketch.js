@@ -42,9 +42,9 @@ function togglePlaying() {
   if (!song.isPlaying()) {
     song.play();
     song.setVolume(0.3);
-    button.html('pause');
+    button.html('Pause');
   } else {
     song.stop();
-    button.html('play');
+    button.html('Play');
   }
 }
